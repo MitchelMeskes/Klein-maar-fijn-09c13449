@@ -6,7 +6,7 @@ foreach (GELD as $uitkomst){
     if ($aantal >= $uitkomst) {
         $aantal = round ($aantal, 2);
         $vloer = floor($aantal / $uitkomst);
-        $aantal = $aantal - ($vloer * $uitkomst);
+        $aantal = round ($aantal - ($vloer * $uitkomst), 2);
     }
     if ($vloer > 0){
         if ($uitkomst < 1) {
